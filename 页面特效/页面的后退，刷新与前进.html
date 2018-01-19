@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="后退" onclick="back()">
+    <input type="button" value="刷新" onclick="refresh()">
+    <input type="button" value="前进" onclick="forward()"> 掘金 首页 小册 开源库 活动 搜索掘金 搜索 写文章 我关注的 Android 前端 iOS 后端 设计 产品 工具资源 阅读 人工智能 标签管理 写文章 分享链接 草稿 热门 最新 评论 本周最热 本月最热 历史最热 专栏 枫上雾棋 5小时前 HTMLCSS 使用 CSS 追踪用户 52 9 专栏 亦枫 3小时前 AndroidGoogle Android 9.0 代号浮现，Google
+    或将禁用非官方 API ！ 5 3 热 阴明 8小时前 BootstrapCSS [英] Bootstrap 4 正式发布 16 9 小册染陌同学 剖析 Vue.js 内部运行机制 购买人数: 294 特价: 9.9元 分享 专栏 蚂蚁金服数据体验技术 6小时前 Node.jsJavaScript Event Loop的规范和实现 92 11 专栏 Yeefun 5小时前 ChromeFirefox 怎麽把＂滚动条＂隐藏？ 56 5 专栏 旭1478080873000 2小时前 vue-router前端
+    vue-router的两种模式的区别 9 专栏 code_mcx 5小时前 React.js前端 React全家桶构建一款Web音乐App实战（七）：歌手列表及详情开发 25 4 专栏 PLDaily 2小时前 Node.js掘金翻译计划 [译] 8 个技巧让你在 2018 年构建更好的 Node.js 应用程序 10 专栏 ECharts 1小时前 前端数据可视化 Canvas or SVG？一张好图，两手准备，就在 ECharts 4.0 2 1 专栏 奇舞周刊 34分钟前 前端ECharts
+    奇舞周刊第 244 期：Web 前端中的 AR 开发技术 2 专栏 iKcamp 5小时前 前端React.js React Native 网络层分析 25 1 daxang1487150661000 5小时前 Vue.js前端 从零开始搭建 Express + Vue 开发环境 22 专栏 最爱妈妈本尊 4小时前 产品单元测试 app开发流程规范 20 1 开源中国 5小时前 Vue.js前端 为什么说Web开发和Vue.js是如此的有趣？ 10 2 江X寒 5小时前 前端JavaScript人工智能
+    deeplearn.js：在浏览器上训练神经网络 12 1 热 专栏 半梦半醒 1天前 CSS 移动端自适应个人理解与收集——rem 265 24 专栏 chaychan 5小时前 APKAndroid APP瘦身大法--AndResGuard的使用 16 夜色镇歌 5小时前 React.js前端 我们编写 React 组件的最佳实践 19 旭1478080873000 1小时前 Webpack webpack开发和生产两个环境的配置详解 1 专栏 Guoch 6小时前 Vue.js前端框架
+    通过vue组件化方式实现常见动态图标 13 2 广告 广告 广告 广告 下载掘金客户端 一个帮助开发者成长的社区 下载掘金客户端 一个帮助开发者成长的社区 收藏集 下载掘金浏览器插件 前往掘金翻译计划 商务合作 关于掘金基本法建议反馈加入我们 商务合作友情链接专栏介绍 ©2018 掘金
+    <script>
+        function back() {
+            history.go(-1);
+        }
+
+        function forward() {
+            history.go(+1);
+        }
+
+        function refresh() {
+            history.go(-0);
+        }
+    </script>
+</body>
+
+</html>

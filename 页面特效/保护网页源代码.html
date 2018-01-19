@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body onload="clear()">
+    <script>
+        function clear() {
+            source = document.body.innerHTML;
+            document.open();
+            document.write("代码已经被隐藏");
+            document.close();
+            document.title = "看不到源代码";
+            document.body.innerHTML = source;
+
+        }
+    </script>
+    <p>看看能不能看到源代码</p>
+</body>
+
+</html>
