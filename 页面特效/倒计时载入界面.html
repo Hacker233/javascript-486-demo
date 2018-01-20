@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="11,url=http://www.baidu.com">
+    <title>Document</title>
+</head>
+
+<body bgcolor="#ffffff" onload="window.setTimeout('getSecs()',1)">
+    <script>
+        //获取当前时间
+        starday = new Date();
+        clockStart = starday.getTime();
+
+        function initStopwach() {
+            var myTime = new Date();
+            var timeNow = myTime.getTime();
+            var timeDiff = timeNow - clockStart; //获取间隔时间
+            this.diffSecs = timeDiff / 100; //因为时间以毫秒为单位
+            return this.diffSecs;
+        }
+
+        function getSecs() {
+            var mySecs = initStopwach();
+            var mySecs1 = "" + mySecs;
+            //以倒计时方式显示时间
+            mySecs1 = 10 - eval(mySecs1.substring(0, mySecs1.indexOf("."))) + "秒";
+            document.form1.timespent.evlue = mySecs1;
+            window.setTimeout('getSecs()', 1000);
+        }
+    </script>
+    <div>
+        十秒加载页面
+        <form action="" name="form1">
+            <input type="text" size="9" value="timespent()">
+        </form>
+    </div>
+</body>
+
+</html>
